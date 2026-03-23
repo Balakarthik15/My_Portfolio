@@ -40,6 +40,8 @@ const Work = () => {
                   id={index}
                   heading={getText(project.title, language)}
                   paragraph={getText(project.para, language)}
+                  industry={getText(project.industry, language)}
+                  result={getText(project.result, language)}
                   imgUrl={project.imageSrc}
                   projectLink={project.url}
                   setOpenModal = {setOpenModal}

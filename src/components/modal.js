@@ -143,6 +143,18 @@ export default function Modal({ closeModal, id, type = "project", totalItems = 0
         <div className="title">
           <h1>{type === "project" ? getText(content.position, language) : getText(content.title, language)}</h1>
           <h2>{type === "project" ? content.date : ""}</h2>
+          
+          {content.socialLinks && content.socialLinks.length > 0 && (
+            <div className="modal-social-links" style={{ display: 'flex', gap: '15px', marginTop: '15px', justifyContent: 'center' }}>
+              {content.socialLinks.map((link, idx) => (
+                <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer">
+                  <img src={link.img} alt="link" style={{ width: '28px', height: '28px', transition: 'transform 0.2s ease', cursor: 'pointer' }} 
+                       onMouseOver={e => e.currentTarget.style.transform = 'scale(1.15)'} 
+                       onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                </a>
+              ))}
+            </div>
+          )}
         </div>
         <div className="body">
         {isVideoFile(content.workImg || content.imageSrc) ? (

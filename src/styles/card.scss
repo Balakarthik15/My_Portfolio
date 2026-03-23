@@ -83,53 +83,49 @@
     
     h1 {
       margin: 4px;
-      font-size: 14px;
+      font-size: 1.2rem;
+      font-weight: bold;
       color: white;
       padding: 4px;
     }
     
-    p {
-      font-size: 12px;
-      color: white;
-      margin: 0 0 6px 0;
-      max-height: none;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-      padding: 0 12px;
-      line-height: 1.25;
-
-      a {
-        color: inherit;
-        text-decoration: underline;
-        transition: opacity 0.2s ease;
-        
-        &:hover {
-          opacity: 0.8;
-        }
-      }
+    .industry-tag {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 8px;
+      font-weight: 500;
     }
-    .btn {
-      background-color: black;
-      color: white;
-      padding: 4px 10px;
-      font-size: 10px;
-      text-decoration: none;
+
+    .result-text {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 0 16px 0;
+      padding: 0 12px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .explore-text {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
       margin-top: auto;
-      margin-bottom: 6px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      margin-bottom: 10px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: white;
+      }
     }
 
     &:hover {
       opacity: 1;
       // Enhanced frosted glass effect with better readability
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(0, 0, 0, 0.7); /* Darker for better contrast */
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
   }

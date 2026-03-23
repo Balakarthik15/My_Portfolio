@@ -9,7 +9,7 @@ const isVideoFile = (url) => {
   return videoExtensions.some(ext => url.toLowerCase().endsWith(ext));
 };
 
-const Card = ({id, heading, paragraph, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
+const Card = ({id, heading, paragraph, industry, result, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
   const { language } = useLanguage();
   const isVideo = isVideoFile(imgUrl);
   
@@ -41,17 +41,22 @@ const Card = ({id, heading, paragraph, imgUrl, projectLink, setOpenModal, setId,
         />
       )}
       <div className="content">
-        <h1 className="header">{heading}</h1>
-        <p className="text" dangerouslySetInnerHTML={{ __html: paragraph }}></p>
-
-        <button 
-          onClick= {()=>{
+        <h1 className="header" style={{ fontWeight: "bold" }}>{heading}</h1>
+        {industry && (
+          <div className="industry-tag">
+            <span role="img" aria-label="factory">🏭</span> {industry}
+          </div>
+        )}
+        {result && (
+          <p className="result-text">{result}</p>
+        )}
+        
+        <div className="explore-text" onClick={()=>{
             setOpenModal(true);
             setId(id);
-          }}
-          type="button" className="btn"> {getText(data.buttons.explore, language)}
-        </button>
-        
+          }}>
+          Click to Explore →
+        </div>
       </div>
       
     </div>
