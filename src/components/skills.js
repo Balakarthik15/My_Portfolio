@@ -17,9 +17,9 @@ const Skills = () => {
             <Fade bottom distance="20px">
               {data.skills.map((skill, index) => (
                 <div key={index} className="skill-item">
-                  <img src={skill.img} alt={skill.title} loading="lazy" />
-                  <h3>{skill.title}</h3>
-                  <p>{skill.para}</p>
+                  <img src={skill.img} alt={getText(skill.title, language)} loading="lazy" />
+                  <h3>{getText(skill.title, language)}</h3>
+                  <p>{getText(skill.para, language)}</p>
                 </div>
               ))}
             </Fade>
