@@ -11,7 +11,7 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en'); // Default to English
+  const [language, setLanguage] = useState('de'); // Default to German
 
   // Check URL parameters on mount and set language accordingly
   useEffect(() => {
@@ -19,7 +19,7 @@ export const LanguageProvider = ({ children }) => {
       const urlParams = new URLSearchParams(window.location.search);
       const langParam = urlParams.get('lang');
       
-      if (langParam === 'zh' || langParam === 'en') {
+      if (langParam === 'de' || langParam === 'en') {
         setLanguage(langParam);
       }
     }
@@ -40,7 +40,7 @@ export const LanguageProvider = ({ children }) => {
   }, [language]);
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'zh' : 'en');
+    setLanguage(prev => prev === 'de' ? 'en' : 'de');
   };
 
   // Utility function to generate URLs with language parameter
@@ -60,7 +60,7 @@ export const LanguageProvider = ({ children }) => {
       toggleLanguage,
       getLanguageUrl,
       isEnglish: language === 'en',
-      isChinese: language === 'zh'
+      isGerman: language === 'de'
     }}>
       {children}
     </LanguageContext.Provider>
