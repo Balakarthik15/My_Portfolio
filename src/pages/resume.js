@@ -12,8 +12,8 @@ const ResumeContent = () => {
   
   // Resume PDF URLs - can be configured for different languages
   const resumeUrls = {
-    en: "https://drive.google.com/file/d/1fPQOUJndzVjnpf468iD_SXImoHbwJZ6j/preview",
-    de: "https://drive.google.com/file/d/1fPQOUJndzVjnpf468iD_SXImoHbwJZ6j/preview" // Same for now, can be updated later
+    en: "https://drive.google.com/file/d/14e_V2lO3oH3cpg36ao7OZpS7SeNbeEjo/preview",
+    de: "https://drive.google.com/file/d/1K25vtnNKRPUElKy7XIIUkF-IsL3-Ha4y/preview" 
   };
   
   const resumeUrl = resumeUrls[language] || resumeUrls.en;

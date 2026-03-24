@@ -1,7 +1,7 @@
 module.exports = {
   // Remove pathPrefix for custom domain setup
   siteMetadata: {
-    title: `Hi, I'm Balakarthik`,
+    title: ``,
     description: `A portfolio to showcase my projects and experiences.`,
     author: `Balakarthik Senthilvel Palani`,
   },
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Balakarthik Portfolio`,
+        name: `Balakarthik's Portfolio`,
         short_name: `Balakarthik`,
         start_url: `/`,
         background_color: `#663399`,

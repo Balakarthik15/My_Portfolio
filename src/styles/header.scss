@@ -268,4 +268,31 @@
       z-index: 1;
     }
   }
+
+  .download-wrapper {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-btn {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    
+    @include media(">=phone", "<lgphone") {
+      font-size: 0.85rem;
+    }
+    
+    &:hover {
+      color: white;
+      border-bottom: 1px solid white;
+      transform: translateY(-2px);
+    }
+  }
 }

@@ -1,10 +1,10 @@
 // Skills Icons
 import rosIcon from "./images/skillsIcon/ROS.jpg"
-import openCVIcon from "./images/skillsIcon/OpenCV.png"
+import openCVIcon from "./images/skillsIcon/ml.jpg"
 import RPIIcon from "./images/skillsIcon/CPU.svg"
-import CADIcon from "./images/skillsIcon/CAD.svg"
-import codeIcon from "./images/skillsIcon/code.svg"
-import clangIcon from "./images/skillsIcon/C_lang.png"
+import CADIcon from "./images/skillsIcon/language.png"
+import codeIcon from "./images/skillsIcon/python.png"
+import clangIcon from "./images/skillsIcon/Data.png"
 
 // Social Icons
 import githubIcon from "./images/contactIcon/github.svg"

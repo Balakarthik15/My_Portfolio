@@ -108,6 +108,15 @@ const Header = () => {
                 >
                   {getText({ en: "CONNECT WITH ME!", de: "LASS UNS VERNETZEN!" }, language)}
                 </a>
+                <div className="download-wrapper">
+                  <a
+                    href={language === 'de' ? "/Balakarthik_Resume_de.pdf" : "/Balakarthik_Resume.pdf"}
+                    download={language === 'de' ? "Balakarthik_Resume_de.pdf" : "Balakarthik_Resume.pdf"}
+                    className="download-btn"
+                  >
+                    {getText({ en: "Download Resume", de: "Lebenslauf herunterladen" }, language)}
+                  </a>
+                </div>
               </Fade>
             </div>
           </div>
@@ -170,6 +179,15 @@ const Header = () => {
             >
               {getText({ en: "CONNECT WITH ME!", de: "LASS UNS VERNETZEN!" }, language)}
             </a>
+            <div className="download-wrapper">
+              <a
+                href={language === 'de' ? "/Balakarthik_Resume_de.pdf" : "/Balakarthik_Resume.pdf"}
+                download={language === 'de' ? "Balakarthik_Resume_de.pdf" : "Balakarthik_Resume.pdf"}
+                className="download-btn"
+              >
+                {getText({ en: "Download Resume", de: "Lebenslauf herunterladen" }, language)}
+              </a>
+            </div>
           </Fade>
         </div>
       </div>
