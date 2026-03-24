@@ -157,8 +157,8 @@
     min-height: 240px;
   }
 
-  // Education specific card styles
-  &.education-card {
+  // Education & Experience specific card styles
+  &.info-card {
     background: #fdfdfd !important; /* Solid off-white to match logos */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
@@ -180,7 +180,7 @@
         justify-content: center;
         width: 100%;
         
-        .education-logo {
+        .info-logo {
           max-width: 95%; /* Increased slightly to fill more horizontal space */
           max-height: 155px; /* Increased logo size */
           object-fit: contain;
@@ -189,13 +189,13 @@
         }
       }
 
-      .education-info-front {
+      .info-text-front {
         text-align: center;
         padding-top: 5px;
         margin-top: 2px;
         
         .degree {
-          font-size: 0.95rem; /* Reduced font size */
+          font-size: 0.85rem; /* Reduced font size for position/degree text */
           font-weight: 600;
           color: #2d3436;
           margin-bottom: 0;
@@ -215,24 +215,25 @@
       
       h1 {
         color: #ffffff !important;
-        font-size: 1.3rem;
-        margin-bottom: 12px;
+        font-size: 1.1rem; /* Reduced to avoid cropping */
+        margin-bottom: 8px; /* Reduced margin */
+        line-height: 1.2;
       }
 
-      .education-detail {
-        margin-bottom: 15px;
+      .info-detail {
+        margin-bottom: 10px;
         width: 100%;
         
         .degree {
-          font-size: 1rem;
+          font-size: 0.85rem; /* Reduced font size */
           font-weight: 500;
           color: #dfe6e9;
-          margin-bottom: 6px;
-          line-height: 1.4;
+          margin-bottom: 4px;
+          line-height: 1.3;
         }
         
         .duration {
-          font-size: 0.85rem;
+          font-size: 0.75rem; /* Slightly smaller */
           color: #b2bec3;
           margin: 0;
         }

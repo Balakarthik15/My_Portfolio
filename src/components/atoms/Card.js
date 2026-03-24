@@ -9,20 +9,20 @@ const isVideoFile = (url) => {
   return videoExtensions.some(ext => url.toLowerCase().endsWith(ext));
 };
 
-const Card = ({id, heading, paragraph, degree, duration, industry, result, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
+const Card = ({id, heading, paragraph, degree, duration, position, industry, result, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
   const { language } = useLanguage();
   const isVideo = isVideoFile(imgUrl);
+  const isInfoCard = type === "education" || type === "experience";
   
   return (
-   
-    <div className={`card ${type === "education" ? "education-card" : ""}`}>
-      {type === "education" ? (
+    <div className={`card ${isInfoCard ? "info-card" : ""}`}>
+      {isInfoCard ? (
         <div className="card-front">
           <div className="logo-container">
-            <img src={imgUrl} alt={heading} className="education-logo" />
+            <img src={imgUrl} alt={heading} className="info-logo" />
           </div>
-          <div className="education-info-front">
-            <p className="degree">{degree}</p>
+          <div className="info-text-front">
+            <p className="degree">{type === "education" ? degree : position}</p>
           </div>
         </div>
       ) : isVideo ? (
@@ -52,9 +52,9 @@ const Card = ({id, heading, paragraph, degree, duration, industry, result, imgUr
       <div className="content">
         <h1 className="header" style={{ fontWeight: "bold" }}>{heading}</h1>
         
-        {type === "education" && (
-          <div className="education-detail">
-            <p className="degree">{degree}</p>
+        {isInfoCard && (
+          <div className="info-detail">
+            <p className="degree">{type === "education" ? degree : position}</p>
             <p className="duration">{duration}</p>
           </div>
         )}

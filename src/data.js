@@ -67,8 +67,7 @@ const siteData = {
     contact: { en: "Contact", de: "Kontakt" },
     professionalWork: { en: "Professional Work", de: "Berufliche Projekte" },
     githubProjects: { en: "Personal & Academic Projects", de: "Persönliche & Akademische Projekte" },
-    ndaNote: { en: "Full details under NDA — available for discussion", de: "Vollständige Details unter NDA – für Gespräche verfügbar" },
-    nvidia: { en: "NVIDIA — AI Systems & Robotics", de: "NVIDIA — KI-Systeme & Robotik" }
+    ndaNote: { en: "Full details under NDA — available for discussion", de: "Vollständige Details unter NDA – für Gespräche verfügbar" }
   },
 
   // Button text
@@ -157,6 +156,7 @@ const siteData = {
         en: "Systems & Solution Engineer — Robotics",
         de: "Systems & Solution Engineer — Robotik"
       },
+      workType: "full-time",
       para: {
         en: "Deployed 75+ AMRs across 25+ facilities with SLAM-based navigation and fleet coordination.",
         de: "Implementierung von über 75 AMRs an über 25 Standorten mit SLAM-basierter Navigation und Flottenkoordination."
@@ -197,6 +197,7 @@ const siteData = {
         en: "Development Engineer — Autonomous Systems",
         de: "Entwicklungsingenieur — Autonome Systeme"
       },
+      workType: "full-time",
       para: {
         en: "Designed full control architecture for an autonomous stacker integrating ROS, PLC & WMS.",
         de: "Entwurf einer vollständigen Steuerungsarchitektur für einen autonomen Hochregalstapler, der ROS, SPS und WMS integriert."
@@ -232,6 +233,7 @@ const siteData = {
         en: "Graduate Intern & Automation Trainee",
         de: "Trainee für Automatisierung"
       },
+      workType: "internship",
       para: {
         en: "Contributed to panel design, servo control, and structured PLC programming for industrial systems.",
         de: "Mitwirkung bei der Schaltschrankkonstruktion, Servosteuerung und strukturierten SPS-Programmierung."
@@ -460,14 +462,6 @@ const siteData = {
       url: "https://www.linkedin.com/in/balakarthiksenthilvelpalani",
     },
   ],
-
-  // ─── NVIDIA SECTION DATA (Fallback) ─────────────────────────
-  nvidiaTime: {
-    en: "Jun 2024 – Present",
-    de: "Jun 2024 – Heute"
-  },
-  nvidiaExperience: [],
-  nvidiaCarouselItems: [],
 }
 
 export default siteData

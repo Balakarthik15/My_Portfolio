@@ -9,9 +9,7 @@ import About from "../components/about"
 import Skills from "../components/skills"
 import Footer from "../components/Footer"
 import Project from "../components/projects"
-import Nvidia from "../components/NVIDIA"
 import Education from "../components/Education"
-import Publications from "../components/Publications"
 
 const IndexPage = () => (
   <Layout>
@@ -19,9 +17,7 @@ const IndexPage = () => (
     <SEO title="Steven Feng Portfolio" />
     <Header></Header>
     <About></About>
-    <Nvidia></Nvidia>
     <Education></Education>
-    <Publications></Publications>
     <Work></Work>
     <Project></Project>
     <Skills></Skills>

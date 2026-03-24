@@ -15,7 +15,7 @@ export default function Modal({ closeModal, id, type = "project", totalItems = 0
   const [isClosing, setIsClosing] = useState(false);
   
   // Determine which data to use based on the type
-  const content = type === "project" ? data.projects[id] : data.education[id];
+  const content = type === "education" ? data.education[id] : data.projects[id];
   
   // Enhanced close function with animation
   const handleClose = useCallback(() => {
@@ -141,15 +141,13 @@ export default function Modal({ closeModal, id, type = "project", totalItems = 0
           </>
         )}
         <div className="title">
-          <h1>{type === "project" ? getText(content.position, language) : getText(content.title, language)}</h1>
-          {type === "project" ? (
-            <h2>{content.date}</h2>
-          ) : (
-            <>
-              <h2 className="education-degree-modal">{getText(content.degree, language)}</h2>
-              <h3 className="education-duration-modal">{getText(content.duration, language)}</h3>
-            </>
-          )}
+          <h1>{getText(content.title, language)}</h1>
+          <h2 className="education-degree-modal">
+            {type === "education" ? getText(content.degree, language) : getText(content.position, language)}
+          </h2>
+          <h3 className="education-duration-modal">
+            {type === "education" ? getText(content.duration, language) : content.date}
+          </h3>
           
           {content.socialLinks && content.socialLinks.length > 0 && (
             <div className="modal-social-links" style={{ display: 'flex', gap: '15px', marginTop: '15px', justifyContent: 'center' }}>
