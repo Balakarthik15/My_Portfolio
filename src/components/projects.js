@@ -12,6 +12,10 @@ import frankaImg from "../images/ProjectPhotos/franka_panda.mp4"
 import dataAnalyticsImg from "../images/ProjectPhotos/data_analytics.mp4"
 import amrFleetImg from "../images/ProjectPhotos/amr_fleet.webp"
 import otSecurityImg from "../images/ProjectPhotos/Otsecurity.png"
+import robotarmImg from "../images/ProjectPhotos/robotarm.webp"
+import stackerImg from "../images/ProjectPhotos/pallettruck.webp"
+import asrsImg from "../images/ProjectPhotos/asrs.webp"
+import agvImg from "../images/ProjectPhotos/agv.webp"
 
 const Project = () => {
   const { language } = useLanguage();
@@ -29,6 +33,10 @@ const Project = () => {
     dataAnalyticsImg,
     amrFleetImg,
     otSecurityImg,
+    robotarmImg,
+    stackerImg,
+    asrsImg,
+    agvImg,
   };
 
   // Get carousel items from data and dynamically convert text fields based on language

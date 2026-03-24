@@ -257,6 +257,7 @@
                 color: rgba(255, 255, 255, 0.98);
                 font-weight: 600;
                 text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.9);
+                white-space: pre-wrap;
                 @include media(">=phone", "<lgphone") {
                     font-size: 10px;
                     line-height: 10px;
@@ -342,21 +343,24 @@
               .explore-btn {
                 display: inline-block;
                 padding: 8px 24px;
-                background: rgba(255, 255, 255, 0.95);
-                color: #333;
-                border: none;
+                background: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 50px;
                 font-size: 0.85rem;
                 font-weight: 600;
                 cursor: pointer;
                 transition: all 0.3s ease;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
                 letter-spacing: 0.3px;
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
 
                 &:hover {
-                  background: #fff;
+                  background: rgba(255, 255, 255, 0.2);
                   transform: translateY(-2px);
-                  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+                  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+                  color: #fff;
                 }
 
                 @media (max-width: 500px) {

@@ -282,8 +282,8 @@ const siteData = {
       category: "github",
       type: "video",
       title: {
-        en: "Ackermann RC Car — Autonomous Navigation (2025–26)",
-        de: "Ferngesteuertes Ackermann-Auto — Autonome Navigation (2025–26)"
+        en: "Ackermann RC Car — \nAutonomous Navigation (2025-2026)",
+        de: "Ferngesteuertes Ackermann-Auto — \nAutonome Navigation (2025-2026)"
       },
       subtitle: {
         en: "ROS2 · Nav2 · Gazebo · SLAM · Reverse Parking",
@@ -300,16 +300,16 @@ const siteData = {
       category: "github",
       type: "video",
       title: {
-        en: "Franka Panda — Colour-Based Sorting (2024–25)",
-        de: "Franka Panda — Farbbasierte Sortierung (2024–25)"
+        en: "Franka Panda Robot Manipulation — \nObject Detection using YOLO (2026)",
+        de: "Franka Panda Robotermanipulation — \nObjekterkennung mit YOLO (2026)"
       },
       subtitle: {
-        en: "ROS2 · MoveIt2 · Gazebo · 7-DOF Planning",
-        de: "ROS2 · MoveIt2 · Gazebo · 7-DOF-Planung"
+        en: "ROS2 · MoveIt2 · YOLO · Obstacle-Aware Motion Planning",
+        de: "ROS2 · MoveIt2 · YOLO · Hindernisbewusste Bewegungsplanung"
       },
       description: {
-        en: "Developed a pick-and-place pipeline using MoveIt2 for collision-free 7-DOF trajectory planning with a colour-based perception module for autonomous object sorting.",
-        de: "Entwicklung einer Pick-and-Place-Pipeline mit MoveIt2 für die kollisionsfreie 7-DOF-Trajektorienplanung mit einem farbbasierten Wahrnehmungsmodul."
+        en: "Developed a Pick-and-Sort robot with YOLO-based object detection and MoveIt2 for collision-free trajectory and obstacle-aware motion planning using Franka Emika Panda",
+        de: "Entwicklung eines Pick-and-Sort-Roboters mit YOLO-basierter Objekterkennung und MoveIt2 für die kollisionsfreie Trajektorienplanung und hindernisbewusste Bewegungsplanung mit Franka Emika Panda"
       },
       buttons: [{ text: { en: "GitHub", de: "GitHub" }, url: "https://github.com/Balakarthik15/Franka-7dof-Robot-Manipulation_Pick-Place.git" }],
     },
@@ -318,8 +318,8 @@ const siteData = {
       category: "github",
       type: "video",
       title: {
-        en: "Data Analytics & AI Modelling Platform (2024)",
-        de: "Datenanalyse- & KI-Modellierungsplattform (2024)"
+        en: "Data Analytics & AI Modelling Platform \n(2024)",
+        de: "Datenanalyse- & KI-Modellierungsplattform \n(2024)"
       },
       subtitle: {
         en: "Python · Scikit-learn · TensorFlow · TensorBoard · CNN",
@@ -336,8 +336,8 @@ const siteData = {
       category: "github",
       type: "video",
       title: {
-        en: "Physics-Informed Neural Network — Vehicle Sideslip (2025–26)",
-        de: "Physics-Informed Neuronales Netz — Fahrzeugschwimmwinkel (2025–26)"
+        en: "Physics-Informed Neural Network — \nVehicle Sideslip (2025-2026)",
+        de: "Physics-Informed Neuronales Netz — \nFahrzeugschwimmwinkel (2025-2026)"
       },
       subtitle: {
         en: "PyTorch · PINN · RNN · TCN",
@@ -354,8 +354,8 @@ const siteData = {
       category: "github",
       type: "image",
       title: {
-        en: "S7/PROFINET — Intrusion Detection System",
-        de: "S7/PROFINET — Intrusion Detection System"
+        en: "S7/PROFINET — \nIntrusion Detection System (2026)",
+        de: "S7/PROFINET — \nIntrusion Detection System (2026)"
       },
       subtitle: {
         en: "Suricata · Lua · ICS Security · S7 · PROFINET",
@@ -372,8 +372,8 @@ const siteData = {
       category: "professional",
       type: "image",
       title: {
-        en: "AMR Fleet Deployment & Traffic Management",
-        de: "AMR-Flottenbereitstellung & Verkehrsmanagement"
+        en: "AMR Fleet Deployment & \nTraffic Management (2022-2024)",
+        de: "AMR-Flottenbereitstellung & \nVerkehrsmanagement (2022-2024)"
       },
       industry: {
         en: "Robotics & Manufacturing",
@@ -402,17 +402,194 @@ const siteData = {
       },
       demoLinks: [
         {
-          text: { en: "🎥 Watch Demo — Ola Electric LinkedIn", de: "🎥 Demo ansehen — Ola Electric LinkedIn" },
-          url: "https://www.linkedin.com/posts/novus-hitech_novushitech-warehouseautomation-autonomousrobots-activity-7433059783596969984-f0gy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
+          text: { en: "🎥 Watch Demo — Multi-robot deployment", de: "🎥 Demo ansehen — Multi-Roboter-Einsatz" },
+          url: "https://www.linkedin.com/posts/novus-hitech_happyholi-holi-activity-7179380353554403330-WCCj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
         },
         {
-          text: { en: "🎥 Watch Demo — Novus Hi-Tech LinkedIn", de: "🎥 Demo ansehen — Novus Hi-Tech LinkedIn" },
-          url: "https://www.linkedin.com/posts/novus-hitech_novushitech-warehouseautomation-autonomousrobots-activity-7433059783596969984-f0gy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
+          text: { en: "🎥 Watch Demo — AMR with attachment", de: "🎥 Demo ansehen — AMR mit Aufsatz" },
+          url: "https://www.linkedin.com/posts/novus-hitech_autonomousmobilerobots-innovation-robotics-activity-7176106445027885056-EBeM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
         }
       ],
       demoCredit: {
         en: "Demo video originally posted by Ola Electric & Novus Hi-Tech on LinkedIn",
         de: "Demovideo ursprünglich veröffentlicht von Ola Electric & Novus Hi-Tech auf LinkedIn"
+      },
+      ndaNote: {
+        en: "Code and internal details under NDA — available for discussion",
+        de: "Code und interne Details unter NDA — für Gespräche verfügbar"
+      },
+      buttons: [],
+    },
+    {
+      media: "robotarmImg",
+      category: "professional",
+      type: "image",
+      title: {
+        en: "Robotic Arm Integration for \nAutomated Carton Handling & Depalletizing (2023)",
+        de: "Roboterarm-Integration für \nautomatisiertes Kartonhandling & Depalletierung (2023)"
+      },
+      industry: {
+        en: "Paint & Chemical Manufacturing",
+        de: "Farben- & Chemieherstellung"
+      },
+      oneLiner: {
+        en: "Integrated ABB robotic arm with AMR for automated carton handling & depalletizing",
+        de: "Integration eines ABB-Roboterarms mit AMR für automatisiertes Kartonhandling und Depalletierung"
+      },
+      role: {
+        en: "Robotics Integration Engineer",
+        de: "Roboter-Integrationsingenieur"
+      },
+      techStack: {
+        en: "ABB 4-DOF Robot · RobotStudio · ABB Pendant · Cognex Vision System · ROS · Conveyor Integration · Popup Lifter · AMR Integration",
+        de: "ABB 4-DOF Roboter · RobotStudio · ABB Pendant · Cognex Visionsystem · ROS · Förderer-Integration · Popup-Lifter · AMR-Integration"
+      },
+      description: {
+        en: "Integrated a 4-DOF ABB robotic arm with an AMR-based material handling system for a leading paint manufacturer in India. The AMR delivered pallets loaded with cartons to the robot workspace. Using a Cognex vision camera, the robot identified carton positions by reading product labels, precisely picked carton bundles, and placed them onto a carton arrangement machine. The robot also performed strap cutting to enable automatic carton separation. After completing each pallet, a popup lifter transferred the empty pallet back to the AMR for return logistics.",
+        de: "Integration eines 4-DOF ABB-Roboterarms in ein AMR-basiertes Materialtransportsystem für einen führenden Farbenhersteller in Indien. Der AMR lieferte mit Kartons beladene Paletten in den Arbeitsbereich des Roboters. Mithilfe einer Cognex-Visionskamera identifizierte der Roboter Kartonpositionen durch das Lesen von Produktetiketten, nahm Kartonbündel präzise auf und platzierte sie auf einer Kartonanordnungsmaschine. Der Roboter führte außerdem ein Bandschneiden durch, um eine automatische Kartontrennung zu ermöglichen. Nach Abschluss jeder Palette beförderte ein Popup-Lifter die leere Palette zurück zum AMR für die Rücklauflogik."
+      },
+      outcome: {
+        en: "Fully automated carton depalletizing and sorting process, eliminating manual handling and significantly improving throughput in the packaging line",
+        de: "Vollständig automatisierter Kartondepalletierungs- und Sortierprozess, der die manuelle Handhabung überflüssig macht und den Durchsatz in der Verpackungslinie erheblich verbessert"
+      },
+      demoLinks: [],
+      demoCredit: {
+        en: "",
+        de: ""
+      },
+      ndaNote: {
+        en: "Code and internal details under NDA — available for discussion",
+        de: "Code und interne Details under NDA — für Gespräche verfügbar"
+      },
+      buttons: [],
+    },
+    {
+      media: "stackerImg",
+      category: "professional",
+      type: "image",
+      title: {
+        en: "Autonomous Stacker AMR — \nMulti-Facility Pallet Management (2023-2024)",
+        de: "Autonomer Stacker AMR — \nMulti-Facility Palettenmanagement (2023-2024)"
+      },
+      industry: {
+        en: "Food & Beverage Manufacturing · Electronics Manufacturing",
+        de: "Lebensmittel- & Getränkeherstellung · Elektronikfertigung"
+      },
+      oneLiner: {
+        en: "Deployed autonomous stacker robots with multi-zone storage & cross-floor logistics",
+        de: "Einsatz autonomer Stacker-Roboter mit Multi-Zonen-Lagerung und etagenübergreifender Logistik"
+      },
+      role: {
+        en: "Robotics & Automation Engineer",
+        de: "Robotik- & Automatisierungsingenieur"
+      },
+      techStack: {
+        en: "Stacker AMR · ROS · Fleet Manager · Traffic Control System · Call Station Integration · Lift/Elevator Integration · Storage Buffer Management · PLC",
+        de: "Stacker AMR · ROS · Flottenmanager · Verkehrsleitsystem · Rufstation-Integration · Lift/Aufzug-Integration · Lagerpuffer-Management · SPS"
+      },
+      description: {
+        en: "Deployed and commissioned autonomous stacker robots across multiple manufacturing facilities with complex intra-facility logistics.\nMondelez (Confectionery Manufacturing): Deployed 4 stacker AMRs across a multi-section chocolate manufacturing facility. Implemented a fully automated pallet IN/OUT sequence with intelligent buffer management across 20-pallet storage zones per carton type. Operators initiate robot tasks via call stations placed at warehouse entry and machine areas. The system dynamically tracks storage occupancy — automatically halting warehouse intake when buffers are full and prioritizing machine-side delivery when production demand is triggered. Managed multi-zone storage sequencing, fleet coordination, and real-time traffic management across different production sections.\nPanasonic (Electronics Manufacturing): Deployed 2 stacker AMRs across a two-floor facility for finished goods logistics. Ground floor robot and first floor robot worked in coordination — first floor robot picks finished carton pallets from the production line and delivers them to the lift area, places the pallet inside the lift, and signals the lift to descend. Ground floor robot autonomously receives the pallet from the lift upon arrival and places it in the designated warehouse dispatch storage area. Managed cross-floor pallet sequencing, lift synchronization, and warehouse storage IN/OUT tracking.",
+        de: "Implementierung und Inbetriebnahme autonomer Stacker-Roboter in mehreren Produktionsstätten mit komplexer intralogistischer Logistik.\nMondelez (Süßwarenherstellung): Einsatz von 4 Stacker-AMRs in einer Schokoladenfabrik mit mehreren Bereichen. Implementierung einer vollautomatischen Paletten-IN/OUT-Sequenz mit intelligentem Puffermanagement in 20-Paletten-Lagerzonen pro Kartontyp. Bediener lösen Roboteraufgaben über Rufstationen aus. Das System verfolgt dynamisch die Lagerbelegung – es stoppt automatisch die Lageraufnahme, wenn die Puffer voll sind, und priorisiert die maschinenseitige Lieferung bei Produktionsbedarf.\nPanasonic (Elektronikfertigung): Einsatz von 2 Stacker-AMRs in einer zweistöckigen Anlage für die Fertigwarenlogistik. Der Roboter im Erdgeschoss und der Roboter im ersten Stock arbeiteten koordiniert zusammen – der Roboter im ersten Stock holt fertige Kartonpaletten von der Produktionslinie ab, liefert sie zum Liftbereich, platziert die Palette im Lift und signalisiert dem Lift die Abfahrt. Der Roboter im Erdgeschoss empfängt die Palette bei Ankunft autonom und platziert sie im Versandlagerbereich."
+      },
+      outcome: {
+        en: "Eliminated manual pallet handling across two major manufacturing facilities, enabling fully automated multi-zone storage management, cross-floor logistics, and real-time buffer tracking — significantly reducing material wait times and human error in production lines",
+        de: "Eliminierung der manuellen Palettenhandhabung in zwei großen Produktionsstätten, Ermöglichung eines vollautomatischen Multi-Zonen-Lagermanagements, etagenübergreifender Logistik und Echtzeit-Pufferverfolgung – dies führte zu einer erheblichen Reduzierung der Materialwartezeiten und menschlicher Fehler."
+      },
+      demoLinks: [
+        {
+          text: { en: "🎥 Watch Demo — NOVUS Stacker", de: "🎥 Demo ansehen — NOVUS Stacker" },
+          url: "https://www.linkedin.com/posts/novus-hitech_warehouseautomation-forkliftamr-smartintralogistics-activity-7373574459083055104-Tszr?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
+        }
+      ],
+      demoCredit: {
+        en: "Officially posted by Novus Hi-Tech Robotics",
+        de: "Offiziell veröffentlicht von Novus Hi-Tech Robotics"
+      },
+      ndaNote: {
+        en: "Code and internal details under NDA — available for discussion",
+        de: "Code und interne Details unter NDA — für Gespräche verfügbar"
+      },
+      buttons: [],
+    },
+    {
+      media: "asrsImg",
+      category: "professional",
+      type: "image",
+      title: {
+        en: "Automated Storage & Retrieval System (ASRS) — \n5-Level Bin Storage (2021-2022)",
+        de: "Automatisiertes Lager- und Bereitstellungssystem (ASRS) — \n5-Ebenen-Behälterlager (2021-2022)"
+      },
+      industry: {
+        en: "Industrial Automation / Warehouse Management",
+        de: "Industrieautomatisierung / Lagerverwaltung"
+      },
+      oneLiner: {
+        en: "Developed 5-level ASRS for intelligent bin-based stock management & WMS integration",
+        de: "Entwicklung eines 5-Ebenen-ASRS für intelligentes behälterbasiertes Bestandsmanagement"
+      },
+      role: {
+        en: "Robotics & Automation Engineer",
+        de: "Robotik- & Automatisierungsingenieur"
+      },
+      techStack: {
+        en: "ASRS Robot · Telescopic Fork Mechanism · QR Code Scanner · Conveyor System · Popup Lifter · Central PLC · WMS Integration · ERP/Stock Software Integration · Fleet Manager",
+        de: "ASRS-Roboter · Teleskopgabel-Mechanismus · QR-Code-Scanner · Förderer-System · Popup-Lifter · Zentrale SPS · WMS-Integration · ERP/Lagersoftware-Integration · Flottenmanager"
+      },
+      description: {
+        en: "Developed and implemented a 5-level Automated Storage and Retrieval System for intelligent bin-based stock management. Each level housed 50 bins (250 total capacity) with dedicated conveyor and lifter infrastructure. The ASRS robot used a telescopic fork attachment to retrieve bins across all levels, navigating between floors via an integrated lifter mechanism. QR codes affixed to each bin enabled automatic robot positioning on the frontline conveyor without manual input. Integrated a custom WMS system with the company's official ERP/stock management software, enabling real-time inventory tracking through a central PLC. Upon product selection by the operator, the system autonomously identifies the bin location, dispatches the robot, retrieves the bin, and delivers it to the frontline conveyor.",
+        de: "Entwicklung und Implementierung eines 5-Ebenen-ASRS für das behälterbasierte Bestandsmanagement. Jede Ebene beherbergte 50 Behälter (Gesamtkapazität 250) mit dedizierter Förder- und Hebetechnik. Der ASRS-Roboter nutzte eine Teleskopgabel zum Abrufen der Behälter. QR-Codes ermöglichten die automatische Positionierung des Roboters. Integration eines maßgeschneiderten WMS in die ERP-Software des Unternehmens, was eine Bestandsverfolgung in Echtzeit ermöglichte."
+      },
+      outcome: {
+        en: "Delivered a fully automated warehouse management solution with 250-bin capacity, eliminating manual stock retrieval, enabling real-time inventory visibility, and significantly reducing order fulfillment time for electrical component management",
+        de: "Bereitstellung einer vollautomatischen Lagerverwaltungslösung mit einer Kapazität von 250 Behältern, die die manuelle Bestandsentnahme überflüssig macht und die Zeit für die Auftragsabwicklung erheblich verkürzt."
+      },
+      demoLinks: [],
+      demoCredit: {
+        en: "",
+        de: ""
+      },
+      ndaNote: {
+        en: "Code and internal details under NDA — available for discussion",
+        de: "Code und interne Details unter NDA — für Gespräche verfügbar"
+      },
+      buttons: [],
+    },
+    {
+      media: "agvImg",
+      category: "professional",
+      type: "image",
+      title: {
+        en: "AGV Development & International Deployment — \nMotherson France (2020-2021)",
+        de: "AGV-Entwicklung & internationale Bereitstellung — \nMotherson Frankreich (2020-2021)"
+      },
+      industry: {
+        en: "Automotive Manufacturing",
+        de: "Automobilfertigung"
+      },
+      oneLiner: {
+        en: "Developed AGVs at Motherson Chennai and successfully deployed them in France",
+        de: "Entwicklung von AGVs bei Motherson Chennai und erfolgreiche Bereitstellung in Frankreich"
+      },
+      role: {
+        en: "Robotics & Automation Engineer",
+        de: "Robotik- & Automatisierungsingenieur"
+      },
+      techStack: {
+        en: "AGV · PLC · Navigation System · Production Line Integration · Motherson Internal Systems",
+        de: "AGV · SPS · Navigationssystem · Produktionslinien-Integration · Motherson-interne Systeme"
+      },
+      description: {
+        en: "Contributed to the development and international deployment of Motherson's proprietary AGV systems. Three AGVs developed at Motherson Chennai,india were successfully deployed at Motherson's production facility in France. Oversaw the commissioning and integration of AGVs into the active production line, ensuring seamless operation in a live automotive manufacturing environment across international borders.",
+        de: "Beitrag zur Entwicklung und zum internationalen Einsatz der AGV-Systeme von Motherson. Drei bei Motherson Chennai, Indien, entwickelte AGVs wurden erfolgreich im Motherson-Werk in Frankreich eingesetzt. Überwachung der Inbetriebnahme und Integration der AGVs in die aktive Produktionslinie."
+      },
+      outcome: {
+        en: "Successfully deployed and commissioned 3 AGVs in a French automotive production facility, enabling automated material movement in a live production environment and demonstrating cross-border deployment capability",
+        de: "Erfolgreiche Bereitstellung und Inbetriebnahme von 3 AGVs in einer französischen Automobilfertigung, die eine automatisierte Materialbewegung ermöglichen."
+      },
+      demoLinks: [],
+      demoCredit: {
+        en: "",
+        de: ""
       },
       ndaNote: {
         en: "Code and internal details under NDA — available for discussion",
