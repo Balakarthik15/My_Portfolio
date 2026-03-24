@@ -87,9 +87,13 @@ const siteData = {
         en: "TH Köln — University of Applied Sciences",
         de: "TH Köln — Technische Hochschule Köln"
       },
-      para: {
-        en: "M.Eng. in Automation and IT (Oct 2024 – Present)",
-        de: "M.Eng. in Automatisierung und IT (Okt 2024 – Heute)"
+      degree: {
+        en: "M.Eng. in Automation and IT",
+        de: "M.Eng. in Automatisierung und IT"
+      },
+      duration: {
+        en: "Oct 2024 – Present",
+        de: "Okt 2024 – Heute"
       },
       imageSrc: THKolnLogo,
       workImg: THKolnImg,
@@ -114,9 +118,13 @@ const siteData = {
         en: "Kongu Engineering College",
         de: "Kongu Engineering College"
       },
-      para: {
-        en: "B.E. in Mechatronics Engineering (Jun 2016 – May 2020)",
-        de: "B.E. in Mechatronik (Jun 2016 – Mai 2020)"
+      degree: {
+        en: "B.E. in Mechatronics Engineering",
+        de: "B.E. in Mechatronik"
+      },
+      duration: {
+        en: "Jun 2016 – May 2020",
+        de: "Jun 2016 – Mai 2020"
       },
       imageSrc: KonguLogo,
       workImg: KonguImg,

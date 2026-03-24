@@ -156,4 +156,114 @@
     height: 240px !important;
     min-height: 240px;
   }
+
+  // Education specific card styles
+  &.education-card {
+    background: #fdfdfd !important; /* Solid off-white to match logos */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+
+    .card-front {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px 15px; /* Reduced top/bottom padding */
+      position: relative;
+      z-index: 1;
+      transition: all 0.5s ease;
+
+      .logo-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        .education-logo {
+          max-width: 95%; /* Increased slightly to fill more horizontal space */
+          max-height: 155px; /* Increased logo size */
+          object-fit: contain;
+          transition: transform 0.5s ease;
+          /* Removed mix-blend-mode as the solid background now matches */
+        }
+      }
+
+      .education-info-front {
+        text-align: center;
+        padding-top: 5px;
+        margin-top: 2px;
+        
+        .degree {
+          font-size: 0.95rem; /* Reduced font size */
+          font-weight: 600;
+          color: #2d3436;
+          margin-bottom: 0;
+          line-height: 1.2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+
+    .content {
+      background: rgba(45, 52, 54, 0.85) !important; /* Darker overlay for better contrast on white cards */
+      
+      h1 {
+        color: #ffffff !important;
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+      }
+
+      .education-detail {
+        margin-bottom: 15px;
+        width: 100%;
+        
+        .degree {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #dfe6e9;
+          margin-bottom: 6px;
+          line-height: 1.4;
+        }
+        
+        .duration {
+          font-size: 0.85rem;
+          color: #b2bec3;
+          margin: 0;
+        }
+      }
+
+      .explore-text {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 6px 15px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+
+      .card-front {
+        opacity: 0.1;
+        transform: scale(0.95);
+        filter: blur(4px);
+      }
+      
+      .content {
+        opacity: 1;
+      }
+    }
+  }
 }

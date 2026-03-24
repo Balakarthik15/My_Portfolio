@@ -9,14 +9,23 @@ const isVideoFile = (url) => {
   return videoExtensions.some(ext => url.toLowerCase().endsWith(ext));
 };
 
-const Card = ({id, heading, paragraph, industry, result, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
+const Card = ({id, heading, paragraph, degree, duration, industry, result, imgUrl, projectLink, setOpenModal, setId, type = "project"}) => {
   const { language } = useLanguage();
   const isVideo = isVideoFile(imgUrl);
   
   return (
    
-    <div className="card">
-      {isVideo ? (
+    <div className={`card ${type === "education" ? "education-card" : ""}`}>
+      {type === "education" ? (
+        <div className="card-front">
+          <div className="logo-container">
+            <img src={imgUrl} alt={heading} className="education-logo" />
+          </div>
+          <div className="education-info-front">
+            <p className="degree">{degree}</p>
+          </div>
+        </div>
+      ) : isVideo ? (
         // Video background
         <div className="background-video">
           <video
@@ -42,6 +51,14 @@ const Card = ({id, heading, paragraph, industry, result, imgUrl, projectLink, se
       )}
       <div className="content">
         <h1 className="header" style={{ fontWeight: "bold" }}>{heading}</h1>
+        
+        {type === "education" && (
+          <div className="education-detail">
+            <p className="degree">{degree}</p>
+            <p className="duration">{duration}</p>
+          </div>
+        )}
+
         {industry && (
           <div className="industry-tag">
             <span role="img" aria-label="factory">🏭</span> {industry}

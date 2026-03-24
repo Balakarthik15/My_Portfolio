@@ -38,7 +38,8 @@ const Education = () => {
                   key={index}
                   id={index}
                   heading={getText(school.title, language)}
-                  paragraph={getText(school.para, language)}
+                  degree={getText(school.degree, language)}
+                  duration={getText(school.duration, language)}
                   imgUrl={school.imageSrc}
                   projectLink={school.url}
                   setOpenModal={setOpenModal}
