@@ -11,7 +11,7 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('de'); // Default to German
+  const [language, setLanguage] = useState('en'); // Default to English
 
   // Check URL parameters on mount and set language accordingly
   useEffect(() => {

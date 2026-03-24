@@ -372,24 +372,51 @@ const siteData = {
       category: "professional",
       type: "image",
       title: {
-        en: "AMRFleet — Multi-Robot Traffic Coordination",
-        de: "AMRFleet — Multi-Roboter-Verkehrskoordination"
+        en: "AMR Fleet Deployment & Traffic Management",
+        de: "AMR-Flottenbereitstellung & Verkehrsmanagement"
       },
       industry: {
         en: "Robotics & Manufacturing",
         de: "Robotik & Fertigung"
       },
-      techStack: {
-        en: "ROS · SLAM · Python · PLC · SCL",
-        de: "ROS · SLAM · Python · SPS · SCL"
+      oneLiner: {
+        en: "Deployed 100+ robots in different industries and different environments",
+        de: "Einsatz von über 100 Robotern in verschiedenen Branchen und Umgebungen"
       },
-      outcome: {
-        en: "Eliminated multi-robot routing conflicts and boosted material throughput via real-time coordination software.",
-        de: "Beseitigung von Routing-Konflikten bei mehreren Robotern und Steigerung des Materialdurchsatzes durch Echtzeit-Koordinationssoftware."
+      // Full modal details
+      role: {
+        en: "Robotics & Automation Engineer",
+        de: "Robotik- & Automatisierungsingenieur"
+      },
+      techStack: {
+        en: "ROS · PLC · Fleet Manager · Traffic Control System · Lifter / Conveyor / Tugger Attachments",
+        de: "ROS · SPS · Flottenmanager · Verkehrsleitsystem · Heber / Förderer / Schlepper-Aufsätze"
       },
       description: {
-        en: "Developed an SLAM-based AMR with PLC safety logic and multi-robot coordination software; built HMI for live tracking, diagnostics, and access control. Confidential industry project.",
-        de: "Entwicklung eines SLAM-basierten AMR mit SPS-Sicherheitslogik und Multi-Roboter-Software; Entwicklung von HMIs zur Live-Verfolgung und Diagnose. Vertrauliches Industrieprojekt."
+        en: "Led end-to-end deployment of 100+ Autonomous Mobile Robots across multiple automotive manufacturing facilities, including 75 AMRs at Ola Electric. Managed multi-robot traffic, collision avoidance, and task scheduling for material transport using lifter, conveyor, and tugger attachments for bins, trolleys, and conveyors.",
+        de: "Leitung der End-to-End-Bereitstellung von über 100 autonomen mobilen Robotern in mehreren Automobilfertigungsstätten, darunter 75 AMRs bei Ola Electric. Verwaltung von Multi-Roboter-Verkehr, Kollisionsvermeidung und Aufgabenplanung für den Materialtransport mit Heber-, Förderer- und Schlepper-Aufsätzen."
+      },
+      outcome: {
+        en: "Significantly accelerated intra-facility material movement, reducing manual material handling across production lines",
+        de: "Deutliche Beschleunigung des innerbetrieblichen Materialflusses und Reduzierung der manuellen Materialhandhabung in den Produktionslinien"
+      },
+      demoLinks: [
+        {
+          text: { en: "🎥 Watch Demo — Ola Electric LinkedIn", de: "🎥 Demo ansehen — Ola Electric LinkedIn" },
+          url: "https://www.linkedin.com/posts/novus-hitech_novushitech-warehouseautomation-autonomousrobots-activity-7433059783596969984-f0gy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
+        },
+        {
+          text: { en: "🎥 Watch Demo — Novus Hi-Tech LinkedIn", de: "🎥 Demo ansehen — Novus Hi-Tech LinkedIn" },
+          url: "https://www.linkedin.com/posts/novus-hitech_novushitech-warehouseautomation-autonomousrobots-activity-7433059783596969984-f0gy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHDu8AB77tA3sT69-qTNOl1EZ59lQ_oSs4"
+        }
+      ],
+      demoCredit: {
+        en: "Demo video originally posted by Ola Electric & Novus Hi-Tech on LinkedIn",
+        de: "Demovideo ursprünglich veröffentlicht von Ola Electric & Novus Hi-Tech auf LinkedIn"
+      },
+      ndaNote: {
+        en: "Code and internal details under NDA — available for discussion",
+        de: "Code und interne Details unter NDA — für Gespräche verfügbar"
       },
       buttons: [],
     },

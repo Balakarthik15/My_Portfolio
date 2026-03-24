@@ -3,6 +3,7 @@ import Fade from "./animations/Fade"
 import { Carousel } from "react-bootstrap"
 import { useLanguage } from "../contexts/LanguageContext"
 import data, { getText } from "../data"
+import ProfessionalModal from "./ProfessionalModal"
 import "../styles/projects.scss"
 
 import ackermanImg from "../images/ProjectPhotos/ackermann_car.mp4"
@@ -17,6 +18,8 @@ const Project = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState("github");
   const [isMobile, setIsMobile] = useState(false);
+  const [professionalModalOpen, setProfessionalModalOpen] = useState(false);
+  const [professionalModalItem, setProfessionalModalItem] = useState(null);
 
   // Media mapping for carousel items
   const mediaMap = {
@@ -37,6 +40,14 @@ const Project = () => {
     industry: getText(item.industry, language),
     techStack: getText(item.techStack, language),
     outcome: getText(item.outcome, language),
+    oneLiner: getText(item.oneLiner, language),
+    role: getText(item.role, language),
+    demoCredit: getText(item.demoCredit, language),
+    ndaNote: getText(item.ndaNote, language),
+    demoLinks: item.demoLinks ? item.demoLinks.map(link => ({
+      text: getText(link.text, language),
+      url: link.url
+    })) : [],
     buttons: item.buttons.map(btn => ({
       text: getText(btn.text, language),
       url: btn.url
@@ -75,6 +86,11 @@ const Project = () => {
     setActiveIndex(0);
   };
 
+  const openProfessionalModal = (item) => {
+    setProfessionalModalItem(item);
+    setProfessionalModalOpen(true);
+  };
+
   return (
     <div className="section" id="projects">
       <div className="container">
@@ -103,7 +119,7 @@ const Project = () => {
                 activeIndex={activeIndex}
                 onSelect={handleCarouselSelect}
                 touch={true} 
-                interval={activeCategory === 'professional' ? 5000 : 3000} // More time for professional cards
+                interval={activeCategory === 'professional' ? 5000 : 3000}
                 indicators={!isMobile && filteredItems.length > 1}
                 controls={filteredItems.length > 1}
                 keyboard={false}
@@ -138,16 +154,16 @@ const Project = () => {
                               <span className="label">{language === 'en' ? 'Industry:' : 'Branche:'}</span>
                               <span className="value">{item.industry}</span>
                             </div>
-                            <div className="meta-row">
-                              <span className="label">{language === 'en' ? 'Stack:' : 'Technologien:'}</span>
-                              <span className="value">{item.techStack}</span>
-                            </div>
-                            <p className="outcome-text">
-                              <strong>{language === 'en' ? 'Result:' : 'Ergebnis:'}</strong> {item.outcome}
-                            </p>
-                            <div className="nda-disclaimer">
-                              {getText(data.sections.ndaNote, language)}
-                            </div>
+                            <p className="one-liner-text">{item.oneLiner}</p>
+                            <button
+                              className="explore-btn"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                openProfessionalModal(item);
+                              }}
+                            >
+                              {language === 'en' ? 'Click to Explore →' : 'Klicken zum Entdecken →'}
+                            </button>
                           </div>
                         ) : (
                           <div className="github-info">
@@ -175,6 +191,14 @@ const Project = () => {
             )}
           </div>
         </div>
+
+      {/* Professional project modal */}
+      {professionalModalOpen && professionalModalItem && (
+        <ProfessionalModal
+          item={professionalModalItem}
+          closeModal={() => setProfessionalModalOpen(false)}
+        />
+      )}
     </div>
   )
 }

@@ -320,35 +320,48 @@
                 }
               }
 
-              .outcome-text {
-                margin-top: 12px;
-                margin-bottom: 15px;
-                color: rgba(255, 255, 255, 0.95);
-                font-size: 0.95rem;
-                line-height: 1.5;
-                
-                strong {
-                  color: rgba(255, 255, 255, 1);
-                }
+              .one-liner-text {
+                margin-top: 10px;
+                margin-bottom: 14px;
+                color: rgba(255, 255, 255, 0.92);
+                font-size: 0.9rem;
+                line-height: 1.4;
+                font-weight: 400;
+                text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 
-                @media (max-width: 500px) {
+                @media (max-width: 768px) {
                   font-size: 0.8rem;
-                  margin-top: 8px;
+                  margin-top: 6px;
                   margin-bottom: 10px;
+                }
+                @media (max-width: 500px) {
+                  display: none;
                 }
               }
 
-              .nda-disclaimer {
-                font-size: 0.8rem;
-                font-style: italic;
-                color: rgba(255, 255, 255, 0.6);
-                margin-top: 15px;
-                padding-top: 10px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
+              .explore-btn {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(255, 255, 255, 0.95);
+                color: #333;
+                border: none;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                letter-spacing: 0.3px;
+
+                &:hover {
+                  background: #fff;
+                  transform: translateY(-2px);
+                  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+                }
 
                 @media (max-width: 500px) {
-                  font-size: 0.7rem;
-                  margin-top: 8px;
+                  font-size: 0.75rem;
+                  padding: 6px 16px;
                 }
               }
             }
