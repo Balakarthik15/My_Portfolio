@@ -38,7 +38,8 @@ export const getText = (textObj, language = 'en') => {
 const siteData = {
   name: {
     en: "Balakarthik Senthilvel Palani",
-    de: "Balakarthik Senthilvel Palani"
+    de: "Balakarthik Senthilvel Palani",
+    zh: "Balakarthik Senthilvel Palani"
   },
 
   headerParagraph: {
